@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "fc041550-cd34-45f2-a93e-96daa0063228",
+		"name": "RedisAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28535146"
+	},
+	"item": [
+		{
+			"name": "AddCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"103\",\r\n    \"name\":\"Aarti Prajapati\",\r\n    \"phone\": 8956331130,\r\n    \"email\": \"aarti123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/customer/101"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomerById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"kanishka\",\r\n    \"phone\": 7892132310,\r\n    \"email\": \"kanishka123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/101"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomerById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/customer/103"
+			},
+			"response": []
+		}
+	]
+}
